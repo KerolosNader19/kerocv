@@ -1,2 +1,2 @@
 # kerocv
-kerocv.10001mb.com
+https://kerocv.10001mb.com
