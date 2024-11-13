@@ -1,2 +1,1 @@
-# kerocv
-https://kerocv.10001mb.com
+wifite_pro
